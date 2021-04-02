@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>toDoList</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="./js/jQuery.js"></script>
+</head>
+<!-- 1.文本框里面输入内容，按下回车，就可以生成待办事项
+     2.点击待办事项复选框，就可以把当前数据添加到已完成事项里面
+     3.点击已完成事项复选框，就可以把当前数据添加到待办事项里面
+     4.但是本页面内容刷新页面不会丢失
+-->
+
+<body>
+  <header>
+    <section>
+      <label for="title">ToDoList</label>
+      <input type="text" id="title" name="title" placeholder="添加事项" required>
+    </section>
+  </header>
+  <section>
+    <h2>正在进行 <span id="todocount"></span></h2>
+    <ol id="todolist" class="demo-box">
+    </ol>
+    <h2>已经完成 <span id="donecount"></span></h2>
+    <ul id="donelist">
+    </ul>
+  </section>
+  <footer>
+    ©todolist.cn xinyue 2021 2644965101@qq.com
+  </footer>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
